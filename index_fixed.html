@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* CSS Variables */
+  .custom-header {
+    background-color: #000;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .profile-card {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    object-fit: cover;
+    margin: 0 auto 20px;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  @media (max-width: 650px) {
+    .profile-card {
+      margin: 30px 20px;
+      padding: 20px;
+    }
+  }
         :root {
             --primary: #2563eb;
             --primary-dark: #1d4ed8;
@@ -644,6 +680,17 @@
 </head>
 <body>
     <!-- Header -->
+    <!-- Header Logo -->
+<header class="custom-header">
+  <img src="wilson-logo.png" alt="Wilson Logo" width="180" style="height:auto">
+</header>
+
+<!-- Profile Section -->
+<section class="profile-card">
+  <img src="wilson-pic.jpg" alt="Wilson Profile" class="profile-pic">
+  <h1>Iloejenachi Ekene Wilson</h1>
+  <p>Web Designer | Crypto Enthusiast | Airdrop Farmer</p>
+</section>
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">
